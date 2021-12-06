@@ -1,0 +1,32 @@
+{
+    "name": "fused/laravel-plaid-api",
+    "description": "Laravel package for Plaid.com's API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Doug Sisk",
+            "homepage": "https://fusedagency.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "dpods/plaid-api-php-client": "^0.4.1",
+        "illuminate/support": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fused\\Plaid\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fused\\Plaid\\Providers\\PlaidServiceProvider"
+            ],
+            "aliases": {
+                "Plaid": "Fused\\Plaid\\Facades\\Plaid"
+            }
+        }
+    }
+}
