@@ -14,6 +14,9 @@
         "dpods/plaid-api-php-client": "^0.4.1",
         "illuminate/support": "^5.5"
     },
+    "replace": {
+        "dpods/laravel-plaid-api": "1.1"
+    },
     "autoload": {
         "psr-4": {
             "Fused\\Plaid\\": "src/"
